@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مدونة المهندس محمد علي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg-color: #f0f2f5;
+    --text-color: #2c3e50;
+    --border-color: #000;
+    --shadow-light: 0 6px 25px rgba(0,0,0,0.12);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: var(--bg-color);
+    font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, 'Cairo', sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+    text-align: center;
+    overflow-x: hidden;
+}
+.main-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-frame {
+    width: 30vw;
+    max-width: 260px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 6px solid var(--border-color);
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-light);
+    animation: pulse 2s infinite cubic-bezier(0.4,0,0.6,1);
+}
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-name {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 5vw;
+    max-font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.profile-bio {
+    font-size: 2.5vw;
+    max-font-size: 2.5rem;
+    line-height: 2.2;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 90%;
+    font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', BlinkMacSystemFont, 'Cairo', sans-serif;
+}
+.social-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+.social-item:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+.social-item img {
+    width: 30px;
+    height: 30px;
+}
+@keyframes pulse {
+    0%,100% { transform: scale(1); box-shadow: 0 6px 25px rgba(0,0,0,0.12);}
+    50% { transform: scale(1.06); box-shadow: 0 8px 30px rgba(0,0,0,0.2);}
+}
+@media (max-width: 768px) {
+    .profile-frame { width: 40vw; margin-bottom: 30px; }
+    .profile-name { font-size: 8vw; }
+    .profile-bio { font-size: 4vw; margin-bottom: 40px; }
+    .social-box { width: 90%; padding: 25px 15px; gap: 18px; }
+    .social-item { font-size: 1.5rem; padding: 20px; }
+    .social-item img { width: 28px; height: 28px; }
+}
+@media (max-width: 480px) {
+    .profile-frame { width: 50vw; margin-bottom: 20px; }
+    .profile-name { font-size: 10vw; }
+    .profile-bio { font-size: 5vw; margin-bottom: 30px; }
+    .social-box { width: 95%; padding: 20px 10px; gap: 15px; }
+    .social-item { font-size: 1.3rem; padding: 18px; }
+    .social-item img { width: 25px; height: 25px; }
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+    <div class="profile-frame">
+        <img src="hh.png" alt="صورة الملف الشخصي">
+    </div>
+    <h1 class="profile-name">المهندس محمد علي</h1>
+    <p class="profile-bio">
+        مرحباً بكم في مدونتي الشخصية. هنا أشارك معكم أفكاري، خبراتي، وتجاربي في مجالات البرمجة، التصميم، والمشاريعي الكهربائيه.
+    </p>
+
+    <div class="social-box">
+        <a href="https://t.me/p1_2p" target="_blank" class="social-item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="تليغرام">
+            تليغرام
+        </a>
+        <a href="https://www.instagram.com/i0c_b" target="_blank" class="social-item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="إنستاغرام">
+            إنستاغرام
+        </a>
+        <a href="https://twitter.com/Muhamdd1873" target="_blank" class="social-item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="تويتر">
+            تويتر
+        </a>
+        <a href="https://wa.me/964776505088" target="_blank" class="social-item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="واتساب">
+            واتساب
+        </a>
+        <a href="https://sendtoengineermohammed.sarhne.com" target="_blank" class="social-item">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="رسائل مجهولة">
+            رسائل مجهولة
+        </a>
+    </div>
+</div>
+</body>
+</html>
